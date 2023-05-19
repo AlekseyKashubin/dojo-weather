@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-main">
+
+        <div class="navbar-border">
+            <div class="top-navbar">
+
+                <div class="right-top">
+                    <h1>DojoWeather</h1>
+                </div>
+
+                <div class="top-left">
+                    <ul onclick="alert(message(this))">
+                        <li>Burbank</li>
+                        <li>Chicago</li>
+                        <li>Dallas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-navbar">
+
+            <div class="bottom-right">
+                <h2>San Jose</h2>
+            </div>
+
+            <div class="bottom-left">
+                <p>show temperature in</p>
+                <select id="temp-c" onchange="chooseOne(this)">
+                    <option>&deg;C</option>
+                    <option>&deg;F</option>
+                </select>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="weather-cards">
+
+            <div class="day">
+                <p>Today</p>
+                <img src="assets/some_rain.png" alt="some rain">
+                <p id="some">some rain</p>
+
+                <div class="temp">
+                    <a id="c1">24&deg;</a>
+                    <p id="f1">18&deg;</p>
+                </div>
+            </div>
+
+            <div class="day">
+                <p>Tomorrow</p>
+                <img src="assets/some_sun.png" alt="some sun">
+                <p id="some">some sun</p>
+
+                <div class="temp">
+                    <a id="c2">27&deg;</a>
+                    <p id="f2">19&deg;</p>
+                </div>
+            </div>
+
+            <div class="day">
+                <p>Friday</p>
+                <img src="assets/some_clouds.png" alt="some clouds">
+                <p id="some">some clouds</p>
+                <div class="temp">
+
+                    <a id="c3">21&deg;</a>
+                    <p id="f3">16&deg;</p>
+                </div>
+            </div>
+
+            <div class="day">
+                <p>Saturday</p>
+                <img src="assets/some_sun.png" alt="some sun">
+                <p id="some">some sun</p>
+
+                <div class="temp">
+                    <a id="c4">26&deg;</a>
+                    <p id="f4">21&deg;</p>
+                </div>
+            </div>
+
+            <!-- this is the cookie section  -->
+        </div>
+        <div id="cookies">
+            <div class="outer-box">
+                <div class="cookie">
+                    <img src="assets/cookie.png" alt="alert">
+                    <div class="cookie-warning">
+                        <h3>Stop! Cookie Time</h3>
+                        <p>We use cookies(sadly not the edibles ones) to personalize <br>
+                            content and ads, to provide social media features and to <br>
+                            analyse our traffic. <a>Read more...</a>
+
+                        </p>
+                    </div>
+                    <button id="cookies-btn" onclick="removeMe(this)">I Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
